@@ -1,0 +1,42 @@
+>>>>>>>>>>>>>>>>>>>>>>>FOR ADMIN<<<<<<<<<<<<<<<<<<<<<<<<<
+1) Create new group
+2) Accept invitations
+3) Remove users
+
+>>>>>>>>>>>>>>>>>>>>>>FOR A GROUP<<<<<<<<<<<<<<<<<<<<<<<<
+1) Get all discussions made
+2) Get all messages of a selected discussion
+3) Add a new discussion topic
+4) Send new message under a discussion topic
+
+>>>>>>>>>>>>>>>>>>>>>>FOR A MESSAGE<<<<<<<<<<<<<<<<<<<<<<
+1) Show read recipients list
+   Time sent
+   Author name
+
+get if the user is online
+
+
+/////////////////////////////////////////////////////////
+Objects:
+
+> Group
+- String Name(Mandatory)
+- String Icon(Default)
+- String Description(Mandatory)
+- User Participants[] (>2)
+- Discussion thread
+
+> User
+- String Name(Mandatory)
+- String Icon(Default)
+- String Bio(Mandatory)
+
+> type Discussion
+- Message Messages[]
+
+> type Message
+- String Content
+- String Time
+- User Author
+- User readRecipients[]

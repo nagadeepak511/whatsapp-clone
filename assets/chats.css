@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    font-family: 'Roboto';
+}
+
+body{
+    width: 100vw;
+}
+
+header{
+    background-color: #075E54;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.brand{
+    font-size: 20px;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.headerOptions{
+    display: flex;
+}
+
+.headerOptions > li{
+    list-style: none;
+    padding-right: 15px;
+}
+
+.headerOptions > li > a{
+    color: white;
+    font-size: 15px;
+}
+
+.chatThumbs{
+    width: 100%;
+}
+
+.container{
+    padding: 15px;
+}
+
+.authImg{
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.authImg > img{
+    height: 40px;
+    width: 40px;
+}
+
+.chat{
+    display: flex;
+}
+
+.chatDesc{
+    margin-top: 15px;
+}
+
+.chatName{
+    font-size: 18px;
+}
