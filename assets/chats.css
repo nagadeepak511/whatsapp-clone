@@ -10,8 +10,8 @@ body, html {
 }
 
 body{
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 button{
@@ -200,4 +200,38 @@ header, .detailedChatHead{
     height: 54px;
     left: 0;
     right: 0;
+}
+
+@media screen and (min-width: 768px){
+    .chatDescHead{
+        width: 680px;
+    }
+
+    .replyInput{
+        width: 650px;
+        height: 40px;
+        bottom: 16px;
+        padding-left: 20px;
+    }
+
+    .detailedChatFoot{
+        height: 60px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    header{
+        width: 420px;
+    }
+
+    .chatDescHead{
+        width: 320px;
+    }
+
+    .detailedChat{
+        width: 604px;
+        top: 0;
+        left: -184px;
+        transition: transform 0.5s;
+    }
 }
