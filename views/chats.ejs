@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <title>Whatsapp</title>
 
-    <link rel="stylesheet" href="assets/chats.css">
+    <link rel="stylesheet" href="assets/chats.css" type="text/css">
+    <script src="assets/chats.js" type="text/javascript"></script>
+
     <script src="https://kit.fontawesome.com/3e643419a6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -17,8 +19,20 @@
             <li><a href="#"><i class="fas fa-ellipsis-v"></i></a></li>
         </div>
     </header>
-    <div class="chatTumbs">
+    <div class="chatThumbs">
         <div class="contaier">
+            <div class="chat">
+                <div class="authImg">
+                    <img src="https://i.ibb.co/6YMMhw3/NWY4-ZDNk-Lmpw-Zw.jpg" alt="user image">
+                </div>
+                <div class="chatDesc" onclick="showChat()">
+                    <div class="chatDescHead">
+                        <h2 class="chatName">Coding group Batch 2020-3</h2>
+                        <p>19:52</p>
+                    </div>
+                    <p class="chatGlimpse">Ok sir, Thank you</p>
+                </div>
+            </div>
             <div class="chat">
                 <div class="authImg">
                     <img src="https://i.ibb.co/6YMMhw3/NWY4-ZDNk-Lmpw-Zw.jpg" alt="user image">
@@ -111,6 +125,7 @@
     <div class="detailedChat">
         <div class="detailedChatHead">
             <div class="detailedHeadChatLeft">
+                <button id="back"><i class="fas fa-chevron-left" onclick="hideChat()"></i></button>
                 <div class="authImg">
                     <img src="https://i.ibb.co/6YMMhw3/NWY4-ZDNk-Lmpw-Zw.jpg" alt="user image">
                 </div>
@@ -156,6 +171,24 @@
                 <div class="conversation">
                     <span class="author">.</span>
                     <span class="conversationContent">.<span class="conversationTime">08:51</span></span>
+                </div>
+            </div>
+            <div>
+                <div class="conversation">
+                    <span class="author">B.K Murthy sir</span>
+                    <span class="conversationContent">without sign you get half marks<span class="conversationTime">08:51</span></span>
+                </div>
+            </div>
+            <div>
+                <div class="conversation">
+                    <span class="author">B.K Murthy sir</span>
+                    <span class="conversationContent">without sign you get half marks<span class="conversationTime">08:51</span></span>
+                </div>
+            </div>
+            <div>
+                <div class="conversation">
+                    <span class="author">B.K Murthy sir</span>
+                    <span class="conversationContent">without sign you get half marks<span class="conversationTime">08:51</span></span>
                 </div>
             </div>
             <div>
