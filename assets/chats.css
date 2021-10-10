@@ -52,6 +52,7 @@ header, .detailedChatHead{
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .container{
@@ -74,6 +75,11 @@ header, .detailedChatHead{
 
 .chat{
     display: flex;
+    background-color: white;
+}
+
+.chat:hover{
+    background-color: rgba(0,0,0,0.05);
 }
 
 .chatDesc{
@@ -202,9 +208,23 @@ header, .detailedChatHead{
     right: 0;
 }
 
+.green{
+    height: 50px;
+    width: 100vw;
+    background-color: #075E54;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+}
+
 @media screen and (min-width: 768px){
     .chatDescHead{
         width: 680px;
+    }
+
+    .chatThumbs{
+        width: 768px;
     }
 
     .replyInput{
@@ -221,17 +241,50 @@ header, .detailedChatHead{
 
 @media screen and (min-width: 1024px){
     header{
-        width: 420px;
+        width: 41%;
+        position: fixed;
+    }
+
+    .chatThumbs{
+        width: 100%;
+    }
+
+    #firstContainer{
+        width: 41%;
+        padding-top: 50px;
     }
 
     .chatDescHead{
-        width: 320px;
+        width: 100%;
+    }
+
+    .chatDesc{
+        width: 100%;
     }
 
     .detailedChat{
-        width: 604px;
+        width: 59%;
         top: 0;
-        left: -184px;
-        transition: transform 0.5s;
+        left: -17.5%;
     }
+
+    #newChat{
+        left: 35%;
+    }
+
+    .replyInput{
+        width: 85%;
+    }
+
+    #back{
+        display: none;
+    }
+
+    .chat{
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+}
+
+@media screen and (max-width: 1440px){
+    
 }
